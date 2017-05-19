@@ -4,10 +4,8 @@ title: {{ site.name }}
 ---
 
 <div id="home">
-    <span>SparkQML is a utility that loads and displays QML document like the qmlscene from Qt SDK. Moreover, it could show all the available states of a component and change to preview the transition effect. It is useful to demonstrate and verify the visual effect of a component.</span>
-    <p></p>
-  <img src="img/SparkQML.gif" style="margin: auto;display:block">
-  <h1>Features</h1>
+    {% capture my_include %}{% include_relative SparkQML.md %}{% endcapture %}
+    {{ my_include | markdownify }}
 
   <h1>Blog Posts</h1>
   <ul class="posts">
